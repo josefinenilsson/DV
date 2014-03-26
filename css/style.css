@@ -1,0 +1,133 @@
+body{
+    font-family: "helvetica";
+    height: 100%;
+    margin: 0;
+}
+main{
+    width: 100%;
+}
+
+/* Sidebar */
+    aside{
+        background: #222222;
+        height: 100%;
+        float: left;
+        width:20%;
+    }
+        aside h2{
+            color: #fff;
+            margin-left: 40px;
+            text-align: center; 
+            width: 180px;
+        }
+        aside img{
+            margin-left: 100px;
+            width: 20%;
+        }
+        aside h3{
+            color: #fff;
+            font-size: 1.1em;
+            margin-bottom: 0px;
+            margin-left: 20px;
+        }
+        aside nav{
+            margin-left: 50px;
+        }
+            aside nav ul{
+                list-style-type: none;
+                -webkit-padding-start: 15px;
+                margin-top: 10px;
+            }
+                aside nav ul li{
+                    padding: 5px;
+                }
+                    aside nav ul li a{
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                    aside nav ul li a:hover{
+                        color: #860000;
+                        text-decoration: underline;
+                    }
+                    aside nav ul li.omoss a{
+                        background:url('../img/info.png') no-repeat;
+                        background-size: contain;
+                        padding-left: 23px;
+                    }
+                    aside nav ul li.kontakt a{
+                        background:url('../img/kontakt.png')no-repeat;
+                        background-size: contain;
+                        padding-left: 23px;
+                    }
+                    aside nav ul li.stodoss a{
+                        background:url('../img/donera.png')no-repeat;
+                        background-size: contain;
+                        padding-left: 23px;
+                    }
+                    aside nav ul li.adoption a{
+                        background:url('../img/adoption.png')no-repeat;
+                        background-size: contain;
+                        padding-left: 23px;
+                    }
+                    aside nav ul li.jourkaran a{
+                        background:url('../img/jourhem.png')no-repeat;
+                        background-size: contain;
+                        padding-left: 23px;
+                    }
+                    aside nav ul li.visomfatthem a{
+                        background:url('../img/hittathem.png')no-repeat;
+                        background-size: contain;
+                        padding-left: 23px;
+                    }
+                    aside nav ul li.upphittade a{
+                        background:url('../img/upphittade.png')no-repeat;
+                        background-size: contain;
+                        padding-left: 23px;
+                    }
+                    aside nav ul li.borttappade a{
+                        background:url('../img/bortsprungna.png')no-repeat;
+                        background-size: contain;
+                        padding-left: 23px;
+                    }
+                    aside nav ul li.id a{
+                        background:url('../img/ID.png')no-repeat;
+                        background-size: contain;
+                        padding-left: 23px;
+                    }
+                    aside nav ul li.kastrering a{
+                        background:url('../img/kastrering.png')no-repeat;
+                        background-size: contain;
+                        padding-left: 23px;
+                    }
+                    aside nav ul li.farligt a{
+                        background:url('../img/farligt.png')no-repeat;
+                        background-size: contain;
+                        padding-left: 23px;
+                    }
+/* Sidebar ends */
+    #wrapper{
+        height: 100%;
+        margin: auto;
+        max-width: 800px;
+        padding-left: 285px;
+        width: 80%;
+        
+    }
+        #wrapper article{
+        }
+            #wrapper article h1{
+                font-size: 2.5em;
+                margin: 0;
+                text-align: center;
+                
+            }
+            #wrapper article img{
+                width: 100%;
+            }
+        #wrapper article .maininfo{
+            display: inline-block;
+        }
+    footer{
+        width: 80%;
+        float: right;
+    }
