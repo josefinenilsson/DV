@@ -1,4 +1,5 @@
 body{
+    background: #FAFAF2;
     font-family: "helvetica";
     height: 100%;
     margin: 0;
@@ -12,13 +13,20 @@ main{
         background: #222222;
         height: 100%;
         float: left;
-        width:20%;
+        width: 290px;
     }
         aside h2{
+            text-align: center;
+        }
+        aside h2 a{
             color: #fff;
             margin-left: 40px;
-            text-align: center; 
+            text-decoration: none;
             width: 180px;
+        }
+        aside h2 a:hover{
+            color: #860000;
+            text-decoration: underline;
         }
         aside img{
             margin-left: 100px;
@@ -104,6 +112,12 @@ main{
                         background-size: contain;
                         padding-left: 23px;
                     }
+        aside .sponsors img{
+            margin-left: 25px;
+            width: 20%;
+            display: inline-block;
+        }
+
 /* Sidebar ends */
     #wrapper{
         height: 100%;
@@ -126,8 +140,28 @@ main{
             }
         #wrapper article .maininfo{
             display: inline-block;
+            vertical-align: top;
+            width: 39%;
+            padding: 5%;
         }
+        #wrapper article .aboutinfo{
+            display: inline-block;
+            vertical-align: top;
+            width: 39%;
+            padding: 5%;
+        }
+            #wrapper article .aboutinfo ul{
+            }
+                #wrapper article .aboutinfo ul li{
+                    padding: 5px;
+                }
+            #wrapper article .aboutinfo td{
+                padding: 5px;
+            }
     footer{
         width: 80%;
         float: right;
     }
+        footer p{
+            text-align: center;
+        }
