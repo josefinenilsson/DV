@@ -58,57 +58,57 @@ main{
                         text-decoration: underline;
                     }
                     aside nav ul li.omoss a{
-                        background:url('../img/info.png') no-repeat;
+                        background:url('../img/blåinfo.png') no-repeat;
                         background-size: contain;
                         padding-left: 23px;
                     }
                     aside nav ul li.kontakt a{
-                        background:url('../img/kontakt.png')no-repeat;
+                        background:url('../img/blåkontakt.png')no-repeat;
                         background-size: contain;
                         padding-left: 23px;
                     }
                     aside nav ul li.stodoss a{
-                        background:url('../img/donera.png')no-repeat;
+                        background:url('../img/blådonera.png')no-repeat;
                         background-size: contain;
                         padding-left: 23px;
                     }
                     aside nav ul li.adoption a{
-                        background:url('../img/adoption.png')no-repeat;
+                        background:url('../img/blåadoption.png')no-repeat;
                         background-size: contain;
                         padding-left: 23px;
                     }
                     aside nav ul li.jourkaran a{
-                        background:url('../img/jourhem.png')no-repeat;
+                        background:url('../img/blåjourhem.png')no-repeat;
                         background-size: contain;
                         padding-left: 23px;
                     }
                     aside nav ul li.visomfatthem a{
-                        background:url('../img/hittathem.png')no-repeat;
+                        background:url('../img/blåhittathem.png')no-repeat;
                         background-size: contain;
                         padding-left: 23px;
                     }
                     aside nav ul li.upphittade a{
-                        background:url('../img/upphittade.png')no-repeat;
+                        background:url('../img/blåupphittade.png')no-repeat;
                         background-size: contain;
                         padding-left: 23px;
                     }
                     aside nav ul li.borttappade a{
-                        background:url('../img/bortsprungna.png')no-repeat;
+                        background:url('../img/blåbortsprungna.png')no-repeat;
                         background-size: contain;
                         padding-left: 23px;
                     }
                     aside nav ul li.id a{
-                        background:url('../img/ID.png')no-repeat;
+                        background:url('../img/blåID.png')no-repeat;
                         background-size: contain;
                         padding-left: 23px;
                     }
                     aside nav ul li.kastrering a{
-                        background:url('../img/kastrering.png')no-repeat;
+                        background:url('../img/blåkastrering.png')no-repeat;
                         background-size: contain;
                         padding-left: 23px;
                     }
                     aside nav ul li.farligt a{
-                        background:url('../img/farligt.png')no-repeat;
+                        background:url('../img/blåfarligt.png')no-repeat;
                         background-size: contain;
                         padding-left: 23px;
                     }
@@ -165,3 +165,32 @@ main{
         footer p{
             text-align: center;
         }
+
+
+
+/* Collage */
+
+.Collage{
+
+    /* define how much padding you want in between your images */
+    padding:10px;
+
+    }
+
+.Collage img{
+
+    /* ensures padding at the bottom of the image is correct */
+    vertical-align:bottom;
+
+    /* hide the images until the plugin has run. the plugin will reveal the images*/
+    /*opacity:0; BORTA FÃ–R ATT LIGHTBOX SKA FUNKA*/
+
+    }
+	
+	.Collage img:hover {
+		-ms-filter: 50 !important;
+		filter: alpha(opacity=50) !important;
+		-moz-opacity: 0.5 !important;
+		-khtml-opacity: 0.5 !important;
+		opacity: 0.5 !important;
+	}

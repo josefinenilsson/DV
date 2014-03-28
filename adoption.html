@@ -12,8 +12,45 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.collageCaption.min.js"> </script>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="js/jquery.collagePlus.min.js"></script>
+        <script type="text/javascript"> 
+
+		// All images need to be loaded for this plugin to work so
+            // we end up waiting for the whole window to load in this example
+            $(window).load(function () {
+                $(document).ready(function(){
+                    collage();
+                    $('.Collage').collageCaption();
+                });
+            });
+
+
+            // Here we apply the actual CollagePlus plugin
+            function collage() {
+                $('.Collage').removeWhitespace().collagePlus(
+                    {
+                        'fadeSpeed'     : 200,
+                        'targetHeight'  : 300,
+                        'direction'     : 'vertical',
+                        'allowPartialLastRow' : true,
+                    }
+                );
+            };
+
+             // This is just for the case that the browser window is resized
+            var resizeTimer = null;
+            $(window).bind('resize', function() {
+                // set a timer to re-apply the plugin
+                if (resizeTimer) clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(collage, 200);
+            });
+
+			</script>
+     
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -53,27 +90,22 @@
             </aside>
             <div id="wrapper">
                 <article>
-                    <h1>Välkommen till Djurens Vänner Jönköping</h1>
-                    <img src="img/loki.jpg"/>
-
+                    <h1>Djur redo för adoption</h1>
                 </article>
-                <article>
-                    <div class="maininfo">
-                        <h3>Senaste nytt</h3>
-                        <ul>
-                            <li>Loppis</li>
-                            <li>Årsmöte</li>
-                            <li>Bamse</li>
-                        </ul>
-                    </div>
-
-                    <div class="maininfo">
-                        <h3>Från bloggen</h3>
-                            <p>aslkdjaslkdasjbdasjdas</p>
-                            <p>lkdjaskldjaslkdjasbdgahslkdbaksjdkabsdjka</p>
-                            <p>lkdjaskldjaslkdjasbdgahslkdbaksjdkabsdjka</p>
-                            <p><a href="#">Läs mer...</a></p>
-                    </div>
+                <div class="Collage">
+                    <img src="http://placehold.it/350x150"><img src="http://placehold.it/400x300"><img src="http://placehold.it/290x800">
+</div>
+            			<a href="img/panorama.jpg" class="flipLightBox"><img src="img/panorama.jpg" alt="Panorama over Vättern" /><span>Panorama Vättern</span>
+                        </a>
+                        <a href="img/slide10.jpg" class="flipLightBox"><img src="img/slide10.jpg" alt="Reflection Yosemite" /><span>Reflektioner Yosemite</span>
+                        </a>
+                        <a href="img/slide8.jpg" class="flipLightBox"><img src="img/slide8.jpg" alt="Stars over Jönköping" /><span>Stjärnor över Jönköping</span>
+                        </a><a href="img/slide9.jpg" class="flipLightBox"><img src="img/slide9.jpg" alt="The Half Dome Yosemite" /><span>Half Dome  Yosemite</span>
+                        </a>
+                        <a href="img/slide5.jpg" class="flipLightBox"><img src="img/slide5.jpg" alt="Panorama over Grand Canyon" /><span>Panorama Grand Canyon</span>
+                        </a>
+                    </div><!-- .collage -->
+        
           
 
                 </article>
